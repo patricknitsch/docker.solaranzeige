@@ -29,7 +29,7 @@ fi
 
 echo ""
 echo "downloading Main Program..."
-cd /tmp/git && git clone https://github.com/DeBaschdi/solar_config.git
+cd /tmp/git && git clone https://github.com/patricknitsch/solar_config.git
 cp -R /tmp/git/solar_config/html /var/www
 cp -R /tmp/git/solar_config/www /var
 cp -R /tmp/git/solar_config/solaranzeige /
