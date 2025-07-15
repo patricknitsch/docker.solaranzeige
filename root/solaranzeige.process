@@ -39,11 +39,11 @@ service ssh stop
 
 echo "" >> /var/www/log/solaranzeige.log
 echo "###############################################################################" >> /var/www/log/solaranzeige.log
-echo "# If u Like my Work, please Donate https://paypal.me/DeBaschdi Thank You ! :) #" >> /var/www/log/solaranzeige.log
+echo "# Changed Version for Kostal to MQTT #" >> /var/www/log/solaranzeige.log
 echo "###############################################################################" >> /var/www/log/solaranzeige.log
 echo "" >> /var/www/log/solaranzeige.log
 echo "#########################################################################" >> /var/www/log/solaranzeige.log
-echo "# Image Version 0.2.2 $LEGACY                                          #" >> /var/www/log/solaranzeige.log
+echo "# Image Version 0.2.3 $LEGACY                                          #" >> /var/www/log/solaranzeige.log
 echo "# Running Solaranzeige $solaranzeige_version #" >> /var/www/log/solaranzeige.log
 echo "#########################################################################" >> /var/www/log/solaranzeige.log
 echo "" >> /var/www/log/solaranzeige.log
