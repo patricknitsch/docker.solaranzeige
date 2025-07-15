@@ -73,14 +73,14 @@ if [[ ! -f /var/www/html/pheditor.php ]]; then
   mkdir -p /var/www/log/apache2
   mkdir -p /pvforecast
   mkdir -p /run/mosquitto
-  cd /tmp/git && git clone https://github.com/DeBaschdi/solar_config.git
+  cd /tmp/git && git clone https://github.com/patricknitsch/solar_config.git
   mv /solaranzeige/solaranzeige_cron /tmp
   cp -R /tmp/git/solar_config/solaranzeige /
   mv /tmp/solaranzeige_cron /solaranzeige
   cd /var/www/html && rm -rf /tmp/git
   su -s /bin/bash -c "TERM=xterm /usr/local/sbin/solaranzeige.update"
   su -s /bin/bash -c "TERM=xterm /usr/local/sbin/pvforecast.update"
-  curl -s 'https://raw.githubusercontent.com/DeBaschdi/solar_config/master/html/pheditor.php' > /var/www/html/pheditor.php
+  curl -s 'https://raw.githubusercontent.com/patricknitsch/solar_config/master/html/pheditor.php' > /var/www/html/pheditor.php
   UPDATE='no'
 fi
 
@@ -110,10 +110,10 @@ chmod -R 777 /var/lib/grafana
 chmod -R 777 /run/mosquitto
 
 # Download current Quick Access
-curl -s 'https://raw.githubusercontent.com/DeBaschdi/solar_config/master/html/index.php' > /var/www/html/index.php
+curl -s 'https://raw.githubusercontent.com/patricknitsch/solar_config/master/html/index.php' > /var/www/html/index.php
 
 # Download Current Remote Support
-curl -s 'https://raw.githubusercontent.com/DeBaschdi/solar_config/master/solaranzeige/support' > /solaranzeige/support
+curl -s 'https://raw.githubusercontent.com/patricknitsch/solar_config/master/solaranzeige/support' > /solaranzeige/support
 
 
 # Hack usb_init.php
